@@ -1,0 +1,81 @@
+.nav {
+  display: block;
+  width: 100%;
+  height: 10%;
+}
+
+.nav-edge1 {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: var(--themeColor);
+}
+
+.nav-edge2 {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: #e6f5ff;
+}
+
+.nav-menu-wrapper {
+  display: block;
+  width: 100%;
+  height: calc(100% - 20px);
+}
+
+.nav-myname-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  margin-left: 10%;
+  vertical-align: top;
+  font-size: 28px;
+  font-family: semibold;
+}
+
+.nav-menu-wrapper-vertical {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  margin-right: 10%;
+  vertical-align: top;
+}
+
+.nav-myname {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--textColor);
+}
+
+.nav-menu{
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-menu-li{
+  margin-left: auto !important;
+  float: right;
+}
+
+.nav-menu-li > span{
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected {
+  color: var(--textColor);
+  background-color: transparent;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected::after {
+  border-bottom-width: 2px;
+  border-bottom-color: var(--themeColor);
+}
