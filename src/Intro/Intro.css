@@ -1,0 +1,27 @@
+.intro-wrapper {
+  display: flex;
+}
+
+.intro-text-wrapper {
+  flex: 1;
+  margin-right: 100px;
+}
+
+.intro-image-wrapper {
+  width: 20vw;
+  max-width: 245px;
+}
+
+.intro-image {
+  width: 100%;
+  
+  height: auto;
+}
+
+.intro-contact-bar {
+  text-align: center;
+}
+
+/* .intro-contact-email {
+  
+} */

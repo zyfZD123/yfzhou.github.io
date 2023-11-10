@@ -1,6 +1,7 @@
 import React, { useState, Component } from 'react'
 import Nav from './Nav/Nav.jsx'
 import './App.css'
+import Intro from './Intro/Intro.jsx'
 
 export default class App extends Component {
   constructor(props) {
@@ -14,6 +15,9 @@ export default class App extends Component {
     return (
       <>
         <Nav />
+        <div className="main-container">
+          <Intro />
+        </div>
         {/* <h1>Vite + React</h1>
         <div className="card">
           

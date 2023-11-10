@@ -5,6 +5,13 @@
   height: 100%;
 }
 
+.main-container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 70vw;
+  height: 90vh;
+}
 
 @keyframes logo-spin {
   from {

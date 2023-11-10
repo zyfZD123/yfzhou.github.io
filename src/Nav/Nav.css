@@ -1,7 +1,7 @@
 .nav {
   display: block;
   width: 100%;
-  height: 10%;
+  height: 10vh;
 }
 
 .nav-edge1 {
@@ -27,9 +27,9 @@
 .nav-myname-wrapper {
   display: inline-block;
   position: relative;
-  width: 40%;
+  width: 25%;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 15vw;
   vertical-align: top;
   font-size: 28px;
   font-family: semibold;
@@ -38,9 +38,9 @@
 .nav-menu-wrapper-vertical {
   display: inline-block;
   position: relative;
-  width: 40%;
+  width: 45%;
   height: 100%;
-  margin-right: 10%;
+  margin-right: 15vw;
   vertical-align: top;
 }
 
