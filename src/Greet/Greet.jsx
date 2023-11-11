@@ -21,13 +21,11 @@ export default class Greet extends Component {
     }
   }
 
-  
-
   render() {
     return <div className="greet">
       <div className="postcard">
         <div className="postcard-text">
-          <span className="postcard-firstline">Nice to meet you! I'm Yunfan Zhou</span>
+          <span className="postcard-firstline">Nice to meet you! I'm Yunfan Zhou&nbsp;&nbsp;</span>
           <span className="postcard-firstline-chinese">(周云帆)</span>
         </div>
         <div className="postcard-text">
