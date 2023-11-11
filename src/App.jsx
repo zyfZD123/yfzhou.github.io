@@ -1,7 +1,11 @@
-import React, { useState, Component } from 'react'
-import Nav from './Nav/Nav.jsx'
+import React, { useState, Component } from 'react';
+
+import Nav from './Nav/Nav.jsx';
+import Greet from './Greet/Greet.jsx';
+import Intro from './Intro/Intro.jsx';
+import Research from "./Research/Research.jsx";
+
 import './App.css'
-import Intro from './Intro/Intro.jsx'
 
 export default class App extends Component {
   constructor(props) {
@@ -16,7 +20,9 @@ export default class App extends Component {
       <>
         <Nav />
         <div className="main-container">
+          <Greet />
           <Intro />
+          <Research />
         </div>
         {/* <h1>Vite + React</h1>
         <div className="card">

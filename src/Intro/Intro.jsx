@@ -41,10 +41,6 @@ export default class Intro extends Component {
       site: "http://huamin.org/",
       name: "Prof. Huamin Qu"
     };
-    this.myemail = {
-      site: "mailto:yunfzhou@zju.edu.cn",
-      name: "yunfzhou@zju.edu.cn",
-    };
     this.firstpaper = {
       site: "https://doi.org/10.19655/j.cnki.1005-4642.2023.03.002",
       name: "paper"
@@ -65,7 +61,7 @@ export default class Intro extends Component {
         <p>
         Welcome to visit my site!
 
-        I'm Yunfan Zhou (周云帆), currently a final-year undergraduate student in <a href={this.cs.site}>{this.cs.name}</a>, and Chu Kochen Honors College (<a href={this.ckc.site}>{this.ckc.name}</a>) in Zhejiang University (<a href={this.zju.site}>{this.zju.name}</a>).
+        I'm currently a final-year undergraduate student in <a href={this.cs.site}>{this.cs.name}</a>, and Chu Kochen Honors College (<a href={this.ckc.site}>{this.ckc.name}</a>) in Zhejiang University (<a href={this.zju.site}>{this.zju.name}</a>).
         
         I'm an incoming PhD student in Interactive Data Group, Zhejiang University (<a href={this.zjuidg.site}>{this.zjuidg.name}</a>) in 2024 fall, under the joint supervision of <a href={this.ycwu.site}>{this.ycwu.name}</a> and <a href={this.dweng.site}>{this.dweng.name}</a>.
         
@@ -80,13 +76,6 @@ export default class Intro extends Component {
         Now my research interest is data visualization and interactive data wrangling.
         </p>
       </div>
-      <div className="intro-image-wrapper">
-        <img src="/self.png" className="intro-image"/>
-        <div className="intro-contact-bar">
-          <div className="intro-contact-email">Email: <a href={this.myemail.site}>{this.myemail.name}</a></div>
-        </div>
-      </div>
-      
     </div>
   }
 }

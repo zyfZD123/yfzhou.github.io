@@ -1,27 +1,7 @@
 .intro-wrapper {
-  display: flex;
+  display: block;
 }
 
 .intro-text-wrapper {
-  flex: 1;
-  margin-right: 100px;
+  font-size: 14px;
 }
-
-.intro-image-wrapper {
-  width: 20vw;
-  max-width: 245px;
-}
-
-.intro-image {
-  width: 100%;
-  
-  height: auto;
-}
-
-.intro-contact-bar {
-  text-align: center;
-}
-
-/* .intro-contact-email {
-  
-} */

@@ -13,6 +13,13 @@
   height: 90vh;
 }
 
+/* Consider narrow screen (e.g. mobile phone) */
+@media screen and (max-width: 660px) {
+  .main-container {
+    width: 90vw;
+  }
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -26,6 +33,16 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+@font-face {
+  font-family: semibold;
+  src: url('/fonts/Alegreya-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Alegreya;
+  src: url('/fonts/Alegreya-Regular.ttf');
 }
 
 .card {
