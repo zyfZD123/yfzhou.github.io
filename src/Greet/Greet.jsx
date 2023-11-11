@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Avatar} from "antd";
 
+import Utils from "../utils.js";
 import "./Greet.css";
 
 export default class Greet extends Component {
@@ -20,11 +21,7 @@ export default class Greet extends Component {
     }
   }
 
-  clickCallBack(link) {
-    return () => {
-      window.open(link, "_blank");
-    };
-  }
+  
 
   render() {
     return <div className="greet">
@@ -41,11 +38,11 @@ export default class Greet extends Component {
         </div>
         <div className="intro-contact-bar">
           <img src="/icons/mail.svg" className="intro-contact-icon"
-               onClick={this.clickCallBack(this.myemail.site)}/>
+               onClick={Utils.clickCallBack(this.myemail.site)}/>
           <img src="/icons/github.svg" className="intro-contact-icon"
-               onClick={this.clickCallBack(this.mygit.site)}/>
+               onClick={Utils.clickCallBack(this.mygit.site)}/>
           <img src="/icons/twitter.svg" className="intro-contact-icon"
-               onClick={this.clickCallBack(this.mytwitter.site)}/>
+               onClick={Utils.clickCallBack(this.mytwitter.site)}/>
         </div>
       </div>
       <div className="intro-image-wrapper">

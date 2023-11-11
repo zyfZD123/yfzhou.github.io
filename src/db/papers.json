@@ -1,0 +1,19 @@
+{
+  "papers": [
+    {
+      "documentTitle": "Interactive Table Synthesis with Natural Language",
+      "authorID": [
+        "ywhuang",
+        "yfzhou",
+        "rchen",
+        "Changhao Pan",
+        "xhshu",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "IEEE Transactions on Visualization and Computer Graphics",
+      "year": 2023,
+      "teaserName": "NL2Rigel.png"
+    }
+  ]
+}

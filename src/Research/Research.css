@@ -1,0 +1,38 @@
+.publication {
+  display: block;
+}
+
+.publication-title {
+  display: block;
+  font-family: semibold;
+  font-size: 26px;
+}
+
+.paper-img-wrapper {
+  width: 250px;
+}
+
+.paper-img {
+  width: 100%;
+  height: auto;
+}
+
+.paper-title {
+  font-size: 16px;
+  font-family: var(--fontDefault);
+  font-weight: 600;
+  color: #777777;
+}
+
+.author-me {
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+  /* text-decoration-thickness: 3px; */
+}
+
+.author-haslink:hover {
+  position: relative;
+  color: var(--linkColor);
+  cursor: pointer;
+}
