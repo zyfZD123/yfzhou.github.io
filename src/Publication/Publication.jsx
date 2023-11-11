@@ -5,9 +5,9 @@ import paperJson from "../db/papers.json";
 import peopleJson from "../db/people.json";
 import {LIST_OP, ME} from "../constants.js";
 import Utils from "../utils.js";
-import "./Research.css"
+import "./Publication.css"
 
-export default class Research extends Component {
+export default class Publication extends Component {
   constructor(props) {
     super(props);
     this.state = {
