@@ -90,7 +90,7 @@ export default class Publication extends Component {
   }
 
   render() {
-    return <div className="publication">
+    return <div className="publication" id="publication">
       <div className="publication-title">Publications</div>
       <div className="publication-paperlist">
         {this.state.papers.map(this.listPaper)}

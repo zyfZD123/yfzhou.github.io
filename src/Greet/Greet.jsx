@@ -22,7 +22,7 @@ export default class Greet extends Component {
   }
 
   render() {
-    return <div className="greet">
+    return <div className="greet" id="about">
       <div className="postcard">
         <div className="postcard-text">
           <span className="postcard-firstline">Nice to meet you! I'm Yunfan Zhou&nbsp;&nbsp;</span>
