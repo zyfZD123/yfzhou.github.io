@@ -6,11 +6,18 @@
   overflow: auto;
 }
 
-.main-container {
+.main-container1 {
   display: block;
   position: relative;
   margin: 0 auto;
   width: 70vw;
+  height: 90vh;
+}
+
+.main-container2 {
+  display: block;
+  position: relative;
+  width: 100vw;
   height: 90vh;
 }
 

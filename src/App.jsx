@@ -19,7 +19,6 @@ export default class App extends Component {
   }
 
   setCurrentItem(cur) {
-    console.log(cur);
     this.setState({currentItem: cur});
   }
 
@@ -29,12 +28,12 @@ export default class App extends Component {
         <Nav currentItem={this.state.currentItem} setCurrentItem={this.setCurrentItem} />
         {
           (this.state.currentItem !== NAV_OPTION.CV) ? 
-          (<div className="main-container">
+          (<div className="main-container1">
             <Greet />
             <Intro />
             <Publication />
           </div>) :
-          (<div className="main-container">
+          (<div className="main-container2">
             <CV />
           </div>)
         }
