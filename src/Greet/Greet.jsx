@@ -44,7 +44,7 @@ export default class Greet extends Component {
         </div>
       </div>
       <div className="intro-image-wrapper">
-        <Avatar src="/self.png" shape="circle" size={130} className="intro-image"></Avatar>
+        <Avatar src="/aboutme/self.png" shape="circle" size={130} className="intro-image"></Avatar>
       </div>
     </div>
   }

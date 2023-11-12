@@ -3,7 +3,7 @@ import {Row, Col} from "antd";
 
 import paperJson from "../db/papers.json";
 import peopleJson from "../db/people.json";
-import {LIST_OP, ME} from "../constants.js";
+import {NAV_OPTION, LIST_OP, ME} from "../constants.js";
 import Utils from "../utils.js";
 import "./Publication.css"
 
@@ -91,7 +91,7 @@ export default class Publication extends Component {
 
   render() {
     return <div className="publication" id="publication">
-      <div className="publication-title">Publications</div>
+      <div className="publication-title">{NAV_OPTION.PUBLICATION}</div>
       <div className="publication-paperlist">
         {this.state.papers.map(this.listPaper)}
       </div>

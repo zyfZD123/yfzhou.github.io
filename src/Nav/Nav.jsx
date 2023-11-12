@@ -1,41 +1,42 @@
 import React, {Component} from "react";
 import { Menu, Anchor } from "antd";
 
+import { NAV_OPTION } from "../constants.js";
 import "./Nav.css"
 
 export default class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentItem: "About",
       menuItem: [
         {
           // label: <span>About</span>,
-          label: "About",
-          key: 'About',
+          label: NAV_OPTION.ABOUT,
+          key: NAV_OPTION.ABOUT,
           // href: "#about",
           // title: 'About',
           className: "nav-menu-li" //Maybe only set the first element's className it will work
         },
         {
           // label: <span>Publication</span>,
-          label: "Publication",
-          key: 'Publication',
+          label: NAV_OPTION.PUBLICATION,
+          key: NAV_OPTION.PUBLICATION,
           // href: "#publication",
           // title: 'Publication',
           className: "nav-menu-li"
         },
         {
           // label: <span>CV</span>,
-          label: "CV",
-          key: 'CV',
+          label: NAV_OPTION.CV,
+          key: NAV_OPTION.CV,
           // href: "#cv",
           // title: 'CV',
           className: "nav-menu-li"
         },
       ]
     };
-    this.defaultItem = "About";
+    this.defaultItem = NAV_OPTION.ABOUT;
+    this.onNavSelect = this.onNavSelect.bind(this);
   }
 
   get displayItems() {
@@ -45,7 +46,7 @@ export default class Nav extends Component {
 
   onNavSelect(e) {
     const {key} = e;
-    console.log(e);
+    this.props.setCurrentItem(key);
   }
 
   render() {
