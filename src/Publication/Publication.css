@@ -8,6 +8,11 @@
   font-size: 26px;
 }
 
+.publication-paperlist {
+  display: block;
+  font-size: var(--fontSizeDefault);
+}
+
 .paper-img-wrapper {
   width: 250px;
 }
@@ -18,10 +23,38 @@
 }
 
 .paper-title {
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--fontDefault);
   font-weight: 600;
   color: #777777;
+}
+
+.paper-author-list span{
+  font-size: var(--fontSizeDefault);
+}
+
+.paper-publication-title {
+  font-size: var(--fontSizeDefault);
+  font-family: var(--fontDefault);
+  font-weight: 300;
+}
+
+/* .useful-links {
+
+} */
+
+.paper-link {
+  display: inline-block;
+}
+
+.paper-link:hover {
+  cursor: pointer;
+  color: var(--linkColor);
+}
+
+.useful-link-icon {
+  width: auto;
+  height: 1em;
 }
 
 .author-me {

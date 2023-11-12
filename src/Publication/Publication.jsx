@@ -69,6 +69,15 @@ export default class Publication extends Component {
     }
   }
 
+  showPaperLink(link) {
+    if(!link) return null;
+    return <div className="paper-link" onClick={Utils.clickCallBack(link)}>
+      <span>{"[ "}</span>
+      <img src="/icons/paperLink.svg" className="useful-link-icon"/>
+      <span>{"Paper ]"}</span>
+    </div>
+  }
+
   listPaper(p) {
     if(this.state.listOp === LIST_OP.BY_DATE) {
       return <Row key={p.renderID} gutter={[50, 25]}>
@@ -81,6 +90,13 @@ export default class Publication extends Component {
           </div>
           <div className="paper-author-list">
             {p.authorID.map(this.listAuthors)}
+          </div>
+          <div className="paper-publication-title">
+            <span>{p.publicationTitle + ", "}</span>
+            <span>{p.year}</span>
+          </div>
+          <div className="useful-links">
+            {this.showPaperLink(p.paperLink)}
           </div>
         </Col>
       </Row>

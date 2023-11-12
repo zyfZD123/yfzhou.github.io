@@ -17,7 +17,8 @@
   --underlineColor: #8ed1ff;
   --textColor: #555555; /* text color default */
   --linkColor: #0094f7;
-  --fontDefault: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+  --fontDefault: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fontSizeDefault: 16px;
 }
 
 body {
