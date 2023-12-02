@@ -6,8 +6,9 @@ import Greet from './Greet/Greet.jsx';
 import Intro from './Intro/Intro.jsx';
 import Publication from "./Publication/Publication.jsx";
 import CV from './CV/CV.jsx';
+import CopyRight from './CopyRight/CopyRight.jsx';
 
-import './App.css'
+import './App.css';
 
 export default class App extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ export default class App extends Component {
             <Greet />
             <Intro />
             <Publication />
+            <CopyRight />
           </div>) :
           (<div className="main-container2">
             <CV />
