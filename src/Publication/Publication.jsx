@@ -80,11 +80,11 @@ export default class Publication extends Component {
 
   listPaper(p) {
     if(this.state.listOp === LIST_OP.BY_DATE) {
-      return <Row key={p.renderID} gutter={[50, 25]}>
-        <Col flex="0 1 auto" className="paper-img-wrapper">
+      return <Row key={p.renderID} gutter={[50, 25]} className="paper">
+        <Col flex="0 0 auto" className="paper-img-wrapper">
           <img className="paper-img" src={this.teaserRootPath + p.teaserName} alt={p.teaserName} />
         </Col>
-        <Col flex="1 1 auto">
+        <Col flex="1 1 auto" className="paper-info-wrapper">
           <div className="paper-title">
             {p.documentTitle}
           </div>

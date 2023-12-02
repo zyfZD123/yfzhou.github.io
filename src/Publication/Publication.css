@@ -13,8 +13,25 @@
   font-size: var(--fontSizeDefault);
 }
 
+.paper {
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 660px) {
+  .paper {
+    flex-wrap: wrap;
+  }
+}
+
 .paper-img-wrapper {
   width: 250px;
+}
+
+.paper-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .paper-img {

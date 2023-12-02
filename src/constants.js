@@ -12,3 +12,5 @@ export const ME = {
   name: "Yunfan Zhou",
   id: "yfzhou"
 };
+
+export const WINDOW_WIDTH_THRES = 660; //window width threshold: 660px

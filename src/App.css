@@ -23,7 +23,7 @@
 
 /* Consider narrow screen (e.g. mobile phone) */
 @media screen and (max-width: 660px) {
-  .main-container {
+  .main-container1 {
     width: 90vw;
   }
 }
